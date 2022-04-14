@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  color: #c5c6c7;
+  background: #0b0c10;
+}
+
+p, .btn {
+  font-size: min(max(14px, 4vw),16px);
+  font-weight: 300;
+}
+
+h1 {
+  font-size: min(max(32px, 4vw),48px);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: min(max(26px, 4vw),36px);
+  font-weight: 700;
+  margin: 0px;
+}
+
+h3 {
+  font-size: min(max(22px, 4vw),28px);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: min(max(14px, 4vw),18px);
+  font-weight: bold;
+  margin: 0px;
+
+}
+a {
+  text-decoration: none;
+  color: #c5c6c7;
+  z-index: 5000;
+}
+
+span {
+  color: #66fcf1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html {
+  scroll-behavior: smooth;
+}

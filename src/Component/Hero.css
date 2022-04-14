@@ -1,0 +1,172 @@
+.hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+.fd {
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+@media (min-width:768px) {
+    .fd {
+        flex-direction: row;
+    }
+}
+.fd-img {
+    width: 100%;
+    height: 40vh;
+}
+.arrow-down {
+    font-size: 48px;
+    animation: shake-vertical 2.5s ease-in-out infinite 26s both;
+    margin-top: -20px;
+    color: #66fcf1;
+    opacity: 0;
+}
+@keyframes shake-vertical {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateY(-8px);
+      opacity: 1;
+    }
+    20%,
+    40%,
+    60% {
+      transform: translateY(8px);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(6.4px);
+      opacity: 1;
+    }
+    90% {
+      transform: translateY(-6.4px);
+      opacity: 1;
+    }
+}
+.ani1 {
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3s both;
+}
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+}
+.ani2 {
+    animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 4s both;
+}
+.ani3 {
+    animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 5s both;
+}
+.ani4 {
+    animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 6s both;
+}
+@keyframes slide-in-blurred-top {
+    0% {
+      transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      transform-origin: 50% 0%;
+      filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scaleY(1) scaleX(1);
+      transform-origin: 50% 50%;
+      filter: blur(0);
+      opacity: 1;
+    }
+}
+.ani5 {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    animation: slide-out-top 13s cubic-bezier(0.550, 0.085, 0.680, 0.530) 12s both;
+}
+@keyframes slide-out-top {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    1% {
+      transform: translateY(-1000px);
+      opacity: 1;
+    }
+    90% {
+        transform: translateY(-1000px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        height: 85vh;
+    }
+}
+
+.ani6 {
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 13s both;
+}
+.ani7 {
+    animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 14s both;
+}
+.ani8 {
+    animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 15s both;
+}
+.ani9 {
+    animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 16s both;
+}
+.ani10 {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    animation: back-to 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 22s both;
+    position: absolute;
+}
+@keyframes back-to {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    1% {
+        position: relative;
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+    90% {
+        top: 0;
+       opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        position: relative;
+        top: 0;
+        opacity: 1;
+        height: 85vh;
+    }
+}
